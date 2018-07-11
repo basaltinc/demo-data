@@ -1,4 +1,7 @@
-import * as data from './data';
+const { resolve } = require('url');
+const data = require('./data');
+
+const baseUrl = 'https://basalt-demo-data.netlify.com';
 
 /**
  * Get random item from an array
@@ -14,7 +17,7 @@ function getRandomItemFromArray(myArray) {
  * @see texts
  * @returns {string} - Random text
  */
-export function text() {
+function text() {
   return getRandomItemFromArray(data.texts);
 }
 
@@ -24,7 +27,7 @@ export function text() {
  * @see titles
  * @returns {string} - Random text
  */
-export function title() {
+function title() {
   return getRandomItemFromArray(data.titles);
 }
 
@@ -33,7 +36,7 @@ export function title() {
  * @see paragraphs
  * @returns {string} - Random text
  */
-export function paragraph() {
+function paragraph() {
   return getRandomItemFromArray(data.paragraphs);
 }
 
@@ -42,6 +45,13 @@ export function paragraph() {
  * @see images
  * @returns {string} - random image source path
  */
-export function image() {
-  return getRandomItemFromArray(data.images);
+function image() {
+  return resolve(baseUrl, getRandomItemFromArray(data.images));
 }
+
+module.exports = {
+  text,
+  title,
+  paragraph,
+  image,
+};
