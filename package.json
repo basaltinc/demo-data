@@ -1,0 +1,15 @@
+{
+  "name": "@basalt/demo-data",
+  "version": "0.0.0",
+  "description": "Example content for Design Systems",
+  "module": "src/index.js",
+  "scripts": {
+    "build": "rm -rf public && cp -r images public",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "design-systems"
+  ],
+  "author": "Basalt",
+  "license": "MIT"
+}
