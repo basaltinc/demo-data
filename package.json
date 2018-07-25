@@ -11,5 +11,8 @@
     "design-systems"
   ],
   "author": "Basalt",
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public" 
+  }
 }
