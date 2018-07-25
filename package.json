@@ -1,6 +1,6 @@
 {
   "name": "@basalt/demo-data",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Example content for Design Systems",
   "main": "src/index.js",
   "scripts": {
@@ -13,6 +13,6 @@
   "author": "Basalt",
   "license": "MIT",
   "publishConfig": {
-    "access": "public" 
+    "access": "public"
   }
 }
