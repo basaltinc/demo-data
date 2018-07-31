@@ -1,3 +1,12 @@
+const { lorem } = require('faker');
+const {
+  sentence,
+  sentences,
+  words,
+  paragraph,
+  text,
+} = lorem;
+
 /** @type {string[]} */
 const images = [
   'imagePlaceholder1.png',
@@ -10,23 +19,34 @@ const images = [
 
 /** @type {string[]} */
 const texts = [
-  'Lorem ipsum',
-  'Consectetur adipisicing',
-  'Adipisicing elit.',
+  words(2),
+  words(3),
+  words(4),
+  words(5),
+  words(2),
+  words(3),
+  words(4),
+  words(5),
 ];
 
 /** @type {string[]} */
 const titles = [
-  'Lorem ipsum dolor sit amet. Consectetur adipisicing.',
-  'Consectetur adipisicing elit, sed do eiusmod tempor incididun',
-  'Adipisicing elit, sed do eiusmod tempor incididunt ut labore et aliqua.',
+  words(5),
+  words(6),
+  words(7),
+  words(5),
+  words(6),
+  words(7),
+  words(5),
+  words(6),
+  words(7),
 ];
 
 /** @type {string[]} */
 const paragraphs = [
-  'Lorem ipsum dolor sit amet. Consectetur adipisicing. Consectetur adipisicing elit, sed do eiusmod tempor incididun. Adipisicing elit, sed do eiusmod tempor incididunt ut labore et aliqua.',
-  'Consectetur adipisicing elit, sed do eiusmod tempor incididun. Adipisicing elit, sed do eiusmod tempor incididunt ut labore et aliqua. Lorem ipsum dolor sit amet. Consectetur adipisicing. Adipisicing elit, sed do eiusmod tempor incididunt ut labore et aliqua. Adipisicing elit, sed do eiusmod tempor incididunt ut labore et aliqua.',
-  'Adipisicing elit, sed do eiusmod tempor incididunt ut labore et aliqua. Consectetur adipisicing elit, sed do eiusmod tempor incididun. Lorem ipsum dolor sit amet. Consectetur adipisicing.',
+  paragraph(3),
+  paragraph(4),
+  paragraph(5),
 ];
 
 module.exports = {

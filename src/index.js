@@ -4,6 +4,17 @@ const data = require('./data');
 const baseUrl = 'https://basalt-demo-data.netlify.com';
 
 /**
+ * Capitalize string
+ * `hi there` => `Hi there`
+ * @param {string} string - String to alter
+ * @returns {string} - The `string` with first character uppercase.
+ */
+function capitalize(string) {
+  if (string.length === 0) return string;
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+/**
  * Get random item from an array
  * @param myArray {array}
  * @returns {*} - a random item from `myArray`
@@ -18,7 +29,7 @@ function getRandomItemFromArray(myArray) {
  * @returns {string} - Random text
  */
 function text() {
-  return getRandomItemFromArray(data.texts);
+  return capitalize(getRandomItemFromArray(data.texts));
 }
 
 
@@ -28,7 +39,7 @@ function text() {
  * @returns {string} - Random text
  */
 function title() {
-  return getRandomItemFromArray(data.titles);
+  return capitalize(getRandomItemFromArray(data.titles));
 }
 
 /**

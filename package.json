@@ -14,5 +14,8 @@
   "license": "MIT",
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "faker": "^4.1.0"
   }
 }
