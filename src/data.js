@@ -1,4 +1,4 @@
-const { lorem } = require('faker');
+const { lorem } = require('faker/locale/en');
 const {
   sentence,
   sentences,
