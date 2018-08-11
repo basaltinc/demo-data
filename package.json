@@ -4,7 +4,10 @@
   "description": "Example content for Design Systems",
   "main": "src/index.js",
   "scripts": {
-    "build": "rm -rf public && cp -r images public",
+    "build:images": "rm -rf public && cp -r images public",
+    "build:data": "node src/generateData.js",
+    "build": "npm run build:images && npm run build:data",
+    "prepare": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -15,7 +18,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "dependencies": {
+  "devDependencies": {
     "faker": "^4.1.0"
   }
 }

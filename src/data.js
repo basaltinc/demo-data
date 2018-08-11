@@ -1,11 +1,4 @@
-const { lorem } = require('faker/locale/en');
-const {
-  sentence,
-  sentences,
-  words,
-  paragraph,
-  text,
-} = lorem;
+const { texts, titles, paragraphs } = require('./data.json');
 
 /** @type {string[]} */
 const images = [
@@ -26,38 +19,6 @@ const images = [
   'basalt-brand-stock/milada-vigerova-66601.jpg',
   'basalt-brand-stock/parker-byrd-139348.jpg',
   'basalt-brand-stock/rawpixel-com-191102.jpg',
-];
-
-/** @type {string[]} */
-const texts = [
-  words(2),
-  words(3),
-  words(4),
-  words(5),
-  words(2),
-  words(3),
-  words(4),
-  words(5),
-];
-
-/** @type {string[]} */
-const titles = [
-  words(5),
-  words(6),
-  words(7),
-  words(5),
-  words(6),
-  words(7),
-  words(5),
-  words(6),
-  words(7),
-];
-
-/** @type {string[]} */
-const paragraphs = [
-  paragraph(3),
-  paragraph(4),
-  paragraph(5),
 ];
 
 module.exports = {
