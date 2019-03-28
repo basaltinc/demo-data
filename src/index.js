@@ -1,5 +1,9 @@
 const { resolve } = require('url');
-const { getRandomItemFromArray, capitalize } = require('./utils');
+const {
+  getRandomItemFromArray,
+  getRandomNumberBetween,
+  capitalize,
+ } = require('./utils');
 const data = require('./data');
 
 const baseUrl = 'https://basalt-demo-data.netlify.com';
@@ -45,4 +49,6 @@ module.exports = {
   title,
   paragraph,
   image,
+  getRandomItemFromArray,
+  getRandomNumberBetween,
 };
