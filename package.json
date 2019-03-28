@@ -1,6 +1,6 @@
 {
   "name": "@basalt/demo-data",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "description": "Example content for Design Systems",
   "main": "src/index.js",
   "scripts": {
