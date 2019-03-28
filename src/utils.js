@@ -1,3 +1,5 @@
+const { randomizedResults } = require('./config');
+
 /**
  * Capitalize string
  * `hi there` => `Hi there`
@@ -15,7 +17,9 @@ function capitalize(string) {
  * @returns {*} - a random item from `myArray`
  */
 function getRandomItemFromArray(myArray) {
-  return myArray[Math.floor(Math.random() * myArray.length)];
+  return randomizedResults
+    ? myArray[Math.floor(Math.random() * myArray.length)]
+    : myArray[0];
 }
 
 /**
@@ -24,7 +28,9 @@ function getRandomItemFromArray(myArray) {
  * @param {number} max
  */
 function getRandomNumberBetween(min, max) {
-  return Math.floor(Math.random() * max) + min;
+  return randomizedResults
+    ? Math.floor(Math.random() * max) + min
+    : min; // @todo make it the average between `min` and `max`
 }
 
 module.exports = {
